@@ -103,6 +103,11 @@ Arrow:
     console.log(name);
  })("Rupan")
 ---------------------------------------
+//IIFE:- with return :
+  (function(name){
+    return name
+ })("Rupan")
+ --------------------------------------
  arrow with return:-
 let sum =(a,b)=>{
     var result = 100;
