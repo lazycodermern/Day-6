@@ -76,3 +76,38 @@ var test = new Car("Audi", "black");
 var result = test.printcolor("the color of my car is ");
 console.log(result);
 -----------------------------------------------
+
+Arrow:
+ var sum = (a,b)=>a*b
+ console.log(sum(2,3))
+ ------------------------------------------------------
+ //normal function
+ function sum (a,b) {
+    return a*b
+ }
+ console.log(sum(2,3))
+ ---------------------------------------------------
+ //annonumous function
+ var sum= function (a,b) {
+    return a*b
+ }
+ console.log(sum(2,3))
+ -------------------------------------------------
+ //IIFE:-()()
+ (function(){
+    console.log("this is IIFE")
+ })()
+ ------------------------------------------
+ //with parameter
+ (function(name){
+    console.log(name);
+ })("Rupan")
+---------------------------------------
+ arrow with return:-
+let sum =(a,b)=>{
+    var result = 100;
+    var total = result+a+b
+    return total
+ }
+ console.log(sum(100,50))
+ console.log(sum(56,200))
