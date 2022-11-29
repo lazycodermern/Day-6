@@ -3,9 +3,10 @@ class Car{
         this.brand = brand; // key = value
         this.color = color; 
     }
-    printcolor(){
-    return this.color;
+    printcolor(str){
+    return str+this.color;
 }
 }
 var test = new Car("Audi", "black");
-console.log(`the color of my car is ${test.printcolor()}`);
+var result = test.printcolor("the color of my car is ")
+console.log(result);
